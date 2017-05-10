@@ -39,14 +39,12 @@ public class Interface extends javax.swing.JFrame {
         pu = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         nt = new javax.swing.JTextField();
-        hp = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         gpu = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         path = new javax.swing.JTextField();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
-        harmonicCheck = new javax.swing.JCheckBox();
         jScrollPane1 = new javax.swing.JScrollPane();
         table = new javax.swing.JTable();
         nprc1 = new javax.swing.JTextField();
@@ -55,12 +53,10 @@ public class Interface extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         ntt = new javax.swing.JTextField();
-        hp1 = new javax.swing.JTextField();
         jButton4 = new javax.swing.JButton();
         path1 = new javax.swing.JTextField();
         genTaskSets = new javax.swing.JButton();
         saveTaskSets = new javax.swing.JButton();
-        harmonicCheck1 = new javax.swing.JCheckBox();
         jLabel6 = new javax.swing.JLabel();
         ntpu = new javax.swing.JTextField();
         barts = new javax.swing.JProgressBar();
@@ -88,8 +84,6 @@ public class Interface extends javax.swing.JFrame {
         jLabel2.setText("Number of Task");
 
         nt.setText("10");
-
-        hp.setText("8");
 
         jLabel4.setText("Generated Process Utilization");
 
@@ -121,9 +115,6 @@ public class Interface extends javax.swing.JFrame {
             }
         });
 
-        harmonicCheck.setSelected(true);
-        harmonicCheck.setText("Harmonic Pariod");
-
         table.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -154,24 +145,21 @@ public class Interface extends javax.swing.JFrame {
                         .addComponent(jLabel4)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(gpu, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
+                        .addGap(0, 11, Short.MAX_VALUE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jButton1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(path))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGap(0, 57, Short.MAX_VALUE)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jLabel1)
-                                        .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING))
-                                    .addComponent(harmonicCheck))
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel1)
+                                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(pu, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(hp, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(nt, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                                 .addComponent(jLabel9)
@@ -203,10 +191,6 @@ public class Interface extends javax.swing.JFrame {
                             .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(hp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(harmonicCheck))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(nprc1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -230,8 +214,6 @@ public class Interface extends javax.swing.JFrame {
 
         ntt.setText("10");
 
-        hp1.setText("8");
-
         jButton4.setText("Browse");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -254,9 +236,6 @@ public class Interface extends javax.swing.JFrame {
                 saveTaskSetsActionPerformed(evt);
             }
         });
-
-        harmonicCheck1.setSelected(true);
-        harmonicCheck1.setText("Harmonic Pariod");
 
         jLabel6.setText("Number of TaskSet / ProcessUtilization");
 
@@ -286,13 +265,9 @@ public class Interface extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel5)
-                                    .addComponent(harmonicCheck1))
+                                .addComponent(jLabel5)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(hp1, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(ntt, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(ntt, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                                 .addComponent(jLabel6)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -336,14 +311,10 @@ public class Interface extends javax.swing.JFrame {
                     .addComponent(nprc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(mutil, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(harmonicCheck1)
-                        .addComponent(hp1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(mutil, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(7, 7, 7)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(path1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton4))
@@ -470,10 +441,6 @@ public class Interface extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        int nt = Integer.parseInt(ntt.getText()); //nbr tache taskset
-        int ntp = Integer.parseInt(ntpu.getText()); //nbt taskset utilisation
-        int mu = Integer.parseInt(mutil.getText()); //max util 
-        int nbp = Integer.parseInt(nprc.getText()); //nbp
         if(pathFile.equals(""))
         {
             JOptionPane.showMessageDialog(this,"Veuillez specifier un fichier de sauvegarde avant","Chemin Incorrect",JOptionPane.ERROR_MESSAGE);
@@ -491,21 +458,19 @@ public class Interface extends javax.swing.JFrame {
         {
             double u=Double.parseDouble(pu.getText());
             int n=Integer.parseInt(nt.getText());
-            double t=Double.parseDouble(hp.getText());
-            int algo = Integer.valueOf(check1.getSelectedIndex());
+            int algo = check1.getSelectedIndex();
             int nbp = Integer.valueOf(nprc1.getText());
-            uunifast = new UUnifast(u, t, n,algo,nbp);
+            uunifast = new UUnifast(u, n,algo,nbp);
             parser=new Parser(uunifast.ts, nbp, algo, u);
             modele = new Modele(uunifast.ts.getTaskSet());
             table.setModel(modele);
             String val = uunifast.ts.getU()+"";
             gpu.setText(val.substring(0,9));
-            if(choix());
+            if(choix())
             {
                 JFileChooser jf=new JFileChooser();
                 jf.setCurrentDirectory(new File("."));
                 jf.addChoosableFileFilter(new FileNameExtensionFilter("XML", "xml", "xml"));
-                jf.setFileFilter(new FileNameExtensionFilter("XMl", "xml", "xml"));
                 jf.setAcceptAllFileFilterUsed(false);
                 int res=jf.showSaveDialog(this);
                 if(res == JFileChooser.APPROVE_OPTION)
@@ -550,7 +515,6 @@ public class Interface extends javax.swing.JFrame {
         int nbp = Integer.parseInt(nprc.getText());
         int algo = check.getSelectedIndex();
         int n = (int)(mu*10);
-        double th=Double.parseDouble(hp1.getText());
         ArrayList<TaskSet> tasksets = new ArrayList<>();
         for(int i = 1 ; i < n ; i++)
         {
@@ -559,7 +523,7 @@ public class Interface extends javax.swing.JFrame {
             for(int j=0;j<ntp;j++)
             {  
                 UUnifast u;
-                u = new UUnifast(i/10.0, th, nt, algo,nbp);
+                u = new UUnifast(i/10.0, nt, algo,nbp);
                 tasksets.add(u.ts);
                 System.out.println(j);
             }
@@ -567,12 +531,11 @@ public class Interface extends javax.swing.JFrame {
         }
         System.out.println("Fin"+tasksets.size());
         p = new Parser(tasksets, nbp, algo, mu,ntp);
-        if(choix());
+        if(choix())
         {
             JFileChooser jf=new JFileChooser();
             jf.setCurrentDirectory(new File("."));
             jf.addChoosableFileFilter(new FileNameExtensionFilter("XML", "xml", "xml"));
-            jf.setFileFilter(new FileNameExtensionFilter("XMl", "xml", "xml"));
             jf.setAcceptAllFileFilterUsed(false);
             int res=jf.showSaveDialog(this);
             if(res == JFileChooser.APPROVE_OPTION)
@@ -586,7 +549,16 @@ public class Interface extends javax.swing.JFrame {
     }//GEN-LAST:event_genTaskSetsActionPerformed
 
     private void saveTaskSetsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveTaskSetsActionPerformed
-        p.enregistre(pathFile2);
+        if(pathFile2.equals(""))
+        {
+            JOptionPane.showMessageDialog(this,"Veuillez specifier un fichier de sauvegarde avant","Chemin Incorrect",JOptionPane.ERROR_MESSAGE);
+        }
+        else if(uunifast == null)
+        {
+            JOptionPane.showMessageDialog(this,"Veuillez generer avant","Erreur de generation",JOptionPane.ERROR_MESSAGE);
+        }
+        else
+            p.enregistre(pathFile2);
     }//GEN-LAST:event_saveTaskSetsActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
@@ -631,28 +603,6 @@ public class Interface extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton8ActionPerformed
 
     public static void main(String args[]) {
-        /*try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Interface.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Interface.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Interface.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Interface.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-
-        /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Interface().setVisible(true);
@@ -668,10 +618,6 @@ public class Interface extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> check1;
     private javax.swing.JButton genTaskSets;
     private javax.swing.JTextField gpu;
-    private javax.swing.JCheckBox harmonicCheck;
-    private javax.swing.JCheckBox harmonicCheck1;
-    private javax.swing.JTextField hp;
-    private javax.swing.JTextField hp1;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
@@ -787,6 +733,6 @@ public class Interface extends javax.swing.JFrame {
         JOptionPane option = new JOptionPane();
         int retour = option.showConfirmDialog(this, "Voulez vous enregistrer ?", 
             "", JOptionPane.YES_NO_OPTION);
-        return retour == 0;
+        return (retour == 0);
     }
 }

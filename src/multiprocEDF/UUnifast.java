@@ -16,16 +16,13 @@ public class UUnifast {
         }
     }
     TaskSet ts;
-    double uTotal,tHarmonic;
+    double uTotal;
     int n;
-    boolean isHarmonic;
     Gossens gossens;
-    public UUnifast(double uTotal, double tHarmonic, int n, int algo,int nbp) {
+    public UUnifast(double uTotal, int n, int algo,int nbp) {
         this.uTotal = uTotal;
-        this.tHarmonic = tHarmonic;
         this.n = n;
-        this.isHarmonic = isHarmonic;
-        ArrayList<Task> tasks=new ArrayList<>();
+        ArrayList<Task> tasks;
         gossens = new Gossens();
         do
         {

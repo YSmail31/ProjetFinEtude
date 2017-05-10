@@ -16,16 +16,13 @@ public class UUnifast {
         }
     }
     TaskSet ts;
-    double uTotal,tHarmonic;
+    double uTotal;
     int n;
-    boolean isHarmonic;
     Gossens gossens;
-    public UUnifast(double uTotal, double tHarmonic, int n, int algo,int nbp) {
+    public UUnifast(double uTotal, int n, int algo,int nbp) {
         this.uTotal = uTotal;
-        this.tHarmonic = tHarmonic;
         this.n = n;
-        this.isHarmonic = isHarmonic;
-        ArrayList<Task> tasks=new ArrayList<>();
+        ArrayList<Task> tasks;
         gossens = new Gossens();
         do
         {
@@ -80,29 +77,8 @@ public class UUnifast {
         }
     }
     public static void main(String[] args) {
-        Parser p = new Parser();
-        p.ouvrir("mpts30.xml");
-        int nbex = 10;        
-        double efficacitéMoyenne = 0;
-        TaskSet ts = p.getTaskSet(250);
-        double U = ts.getU();
-        Processors processors = new Processors(4, ts);
-        processors.DMfirstFit();
-        for(Processor proc : processors.getProcessors())
-        {            
-            if(!proc.taskset.getTaskSet().isEmpty())
-            {
-                Task tsl = proc.taskset.getDMSleepTask();
-                if(tsl.getC() > 0)
-                {
-                    proc.addTask(tsl);
-                }
-            }
-            else
-                proc.taskset.addTask(new Task(1, 1, 1));
-        }
-        efficacitéMoyenne += (processors.getU()-U) / (4-U);
     }
+    
     private Task getTask(double uTask) {
         long p = gossens.determinePeriode();
         long c = (long) Math.ceil(p * uTask);        

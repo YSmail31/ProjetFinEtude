@@ -88,20 +88,16 @@
                                   <Component id="path" max="32767" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="1" attributes="0">
-                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  <EmptySpace min="0" pref="57" max="32767" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="1" attributes="0">
-                                          <Group type="103" groupAlignment="1" attributes="0">
-                                              <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="jLabel2" alignment="1" min="-2" max="-2" attributes="0"/>
-                                              </Group>
-                                              <Component id="harmonicCheck" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jLabel2" alignment="1" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Component id="pu" alignment="0" min="-2" pref="115" max="-2" attributes="0"/>
-                                              <Component id="hp" alignment="0" min="-2" pref="115" max="-2" attributes="0"/>
                                               <Component id="nt" alignment="1" min="-2" pref="115" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
@@ -142,11 +138,6 @@
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="nt" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel2" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="hp" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="harmonicCheck" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
@@ -195,11 +186,6 @@
                     <Property name="text" type="java.lang.String" value="10"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="hp">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="8"/>
-                  </Properties>
-                </Component>
                 <Component class="javax.swing.JLabel" name="jLabel4">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Generated Process Utilization"/>
@@ -245,12 +231,6 @@
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton3ActionPerformed"/>
                   </Events>
-                </Component>
-                <Component class="javax.swing.JCheckBox" name="harmonicCheck">
-                  <Properties>
-                    <Property name="selected" type="boolean" value="true"/>
-                    <Property name="text" type="java.lang.String" value="Harmonic Pariod"/>
-                  </Properties>
                 </Component>
                 <Container class="javax.swing.JScrollPane" name="jScrollPane1">
 
@@ -311,15 +291,9 @@
                               <Group type="102" alignment="1" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="1" attributes="0">
-                                          <Group type="103" groupAlignment="1" attributes="0">
-                                              <Component id="jLabel5" alignment="1" min="-2" max="-2" attributes="0"/>
-                                              <Component id="harmonicCheck1" alignment="1" min="-2" max="-2" attributes="0"/>
-                                          </Group>
+                                          <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="hp1" alignment="0" min="-2" pref="115" max="-2" attributes="0"/>
-                                              <Component id="ntt" alignment="1" min="-2" pref="115" max="-2" attributes="0"/>
-                                          </Group>
+                                          <Component id="ntt" min="-2" pref="115" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="1" attributes="0">
                                           <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
@@ -379,17 +353,11 @@
                               <Component id="jLabel7" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                  <Component id="mutil" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel8" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="harmonicCheck1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="hp1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="mutil" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel8" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="path1" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="jButton4" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -401,7 +369,7 @@
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="barts" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="50" max="32767" attributes="0"/>
+                          <EmptySpace pref="49" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -415,11 +383,6 @@
                 <Component class="javax.swing.JTextField" name="ntt">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="10"/>
-                  </Properties>
-                </Component>
-                <Component class="javax.swing.JTextField" name="hp1">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="8"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JButton" name="jButton4">
@@ -450,12 +413,6 @@
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="saveTaskSetsActionPerformed"/>
                   </Events>
-                </Component>
-                <Component class="javax.swing.JCheckBox" name="harmonicCheck1">
-                  <Properties>
-                    <Property name="selected" type="boolean" value="true"/>
-                    <Property name="text" type="java.lang.String" value="Harmonic Pariod"/>
-                  </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel6">
                   <Properties>
