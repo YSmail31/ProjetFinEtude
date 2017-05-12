@@ -683,11 +683,11 @@ public class Interface extends javax.swing.JFrame {
         ArrayList<Double> list = new ArrayList<>();
         String box = "";
         int nbex = p.nbtu;
-        int deb = (int)(p.deb*10);
         int fin = (int)(p.mu*10);
         int nbprc = p.nbp;
         int algo = p.algo;
         barg.setValue(0);
+        FileWriter fwr = new FileWriter(saveAsPath+".data");
         for(int j=1;j<fin;j++)
         {
             System.out.println(j/10.0);
@@ -709,13 +709,18 @@ public class Interface extends javax.swing.JFrame {
             }
             efficacitéMoyenne /= nbex;
             list.add(efficacitéMoyenne*10);
-            box += "\\draw [line width=1pt] (?,?) -- (?,?);\n";
+            /*box += "\\draw [line width=1pt] (?,?) -- (?,?);\n";
             box = box.replaceFirst("[?]", j+"");
             box = box.replaceFirst("[?]", "0");
             box = box.replaceFirst("[?]", j+"");
-            box = box.replaceFirst("[?]", efficacitéMoyenne*10+"");
+            box = box.replaceFirst("[?]", efficacitéMoyenne*10+"");*/
             barg.setValue(j);
+            fwr.write(j+"\t"+(efficacitéMoyenne*10)+"\n");
         }
+        box += "\\draw plot[mark=*, mark options={fill=white}] \n" + "file {?};\n";
+        String nomFichier = saveAsPath.substring(saveAsPath.lastIndexOf("\\")+1);
+        box = box.replaceFirst("[?]",nomFichier+".data");
+        fwr.close();
         try {
             FileWriter fw = new FileWriter(new File(saveAsPath));
             fw.write(headerTex());

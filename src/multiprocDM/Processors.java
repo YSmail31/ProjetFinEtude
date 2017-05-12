@@ -155,11 +155,7 @@ public class Processors {
     void addSleepTask(Task globalSleepTask) {
         for(int i = 0 ; i < processors.size() ; i++)
         {
-            //System.out.println("------------");
-            //System.out.println(processors.get(i).processUtil());
             processors.get(i).addTask(globalSleepTask);
-            //System.out.println(processors.get(i).processUtil());
-            //System.out.println("------------");
         }
     }
     public void setTaskset(TaskSet taskset) {
